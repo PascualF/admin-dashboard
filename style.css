@@ -1,0 +1,94 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: "Roboto", serif
+}
+
+.full-container{
+    display:flex;
+}
+
+.sidebar{
+    color: white;
+    background-color: rgb(60, 200, 255);
+    flex-basis: 25%;
+    height: 100vh;
+}
+
+.big-icon{
+    height: 25px;
+    display: inline-block;
+}
+
+.icon-small{
+    height: 20px;
+}
+
+
+
+
+
+h1{
+    display: inline-block;
+    font-size: 1rem;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(11, 1fr);
+    background-color: white;
+    height: 20vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    box-shadow: 0 4px 2px -2px rgba(232, 232, 240, 0.2);
+    gap: 5px;
+}
+
+.input-search{
+    grid: 1 / 2 / 1 / 7;
+}
+
+.icon-mid{
+    height: 30px;
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+button{
+    border-radius: 10%;
+}
+
+.btn-share{
+    grid-area: 2 / 10 / 3 / 12;
+}
+
+.btn-upload{
+    grid-area: 2 / 8 / 3 / 10;
+}
+
+.btn-new{
+    grid-area: 2 / 6 / 3 / 8;
+}
+
+.hey-div{
+    grid-area: 2 / 3 / 3 / 3;
+}
+
+.main{
+    background-color: rgb(232, 232, 240);
+    height: 80vh;
+    display: grid;
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 10px;
+}
