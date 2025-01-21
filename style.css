@@ -27,8 +27,6 @@ body{
 
 
 
-
-
 h1{
     display: inline-block;
     font-size: 1rem;
@@ -54,16 +52,58 @@ header{
 }
 
 .input-search{
+    align-items: center;
+    height: 12px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(225, 224, 224);
     grid: 1 / 2 / 1 / 7;
 }
 
+.notifications-name {
+    display: flex;
+    grid-area: 1/ 7 / 2 / 12;
+    justify-content: end;
+    align-items: center;
+}
+
+.search-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid: 1 / 2 / 1 / 7;
+}
+
+.bell{
+    margin-right: 0.5rem;
+}
+
 .icon-mid{
-    height: 30px;
-    grid-area: 2 / 1 / 2 / 3;
+    height: 50px;
+    /*grid-area: 2 / 1 / 2 / 3;*/
+}
+
+.hey-div{
+    display: flex;
+    align-items: center;
+    grid-area: 2 / 1 / 3 / 5;
+}
+
+.hey-div > div > p {
+    padding: 0;
+    margin: 0;
+    margin-left: 0.25rem;
+    font-weight: bold;
 }
 
 button{
-    border-radius: 10%;
+    border-radius: 20px;
+    height: 2rem;
+}
+
+.bold-name{
+    grid-area: 1 / 9 / 2/ 12;
+    justify-content: end;
 }
 
 .btn-share{
@@ -78,10 +118,6 @@ button{
     grid-area: 2 / 6 / 3 / 8;
 }
 
-.hey-div{
-    grid-area: 2 / 3 / 3 / 3;
-}
-
 .main{
     background-color: rgb(232, 232, 240);
     height: 80vh;
@@ -91,4 +127,59 @@ button{
 ul{
     list-style-type: none;
     padding-left: 10px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 80vh;
+    background-color: rgb(229, 228, 228);
+    gap: 5px;
+}
+
+.main-projects {
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.p-projects{
+    grid-area: 1 / 1 / 2 / 2 ;
+}
+
+.p1{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.p2 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.p3{
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.p4{
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+.p5{
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.p6{
+    grid-area: 4 / 2 / 5 / 3;
+}
+
+.post{
+    background-color: white;
+    margin: 15px;
+    border-radius: 5px;
+    border-left: 5px solid orange;
+}
+
+.main-side-bar-projects{
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
 }
