@@ -62,7 +62,7 @@ header{
 
 .notifications-name {
     display: flex;
-    grid-area: 1/ 7 / 2 / 12;
+    grid-area: 1/ 9 / 2 / 11;
     justify-content: end;
     align-items: center;
 }
@@ -96,26 +96,8 @@ header{
     font-weight: bold;
 }
 
-button{
-    border-radius: 20px;
-    height: 2rem;
-}
-
 .bold-name{
-    grid-area: 1 / 9 / 2/ 12;
     justify-content: end;
-}
-
-.btn-share{
-    grid-area: 2 / 10 / 3 / 12;
-}
-
-.btn-upload{
-    grid-area: 2 / 8 / 3 / 10;
-}
-
-.btn-new{
-    grid-area: 2 / 6 / 3 / 8;
 }
 
 .main{
@@ -182,4 +164,21 @@ ul{
 .main-side-bar-projects{
     display: grid;
     grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
+}
+
+button{
+    border-radius: 20px;
+    height: 2rem;
+}
+
+.btn-share{
+    grid-area: 2 / 10 / 3 / 12;
+}
+
+.btn-upload{
+    grid-area: 2 / 8 / 3 / 10;
+}
+
+.btn-new{
+    grid-area: 2 / 6 / 3 / 8;
 }
